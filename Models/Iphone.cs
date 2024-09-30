@@ -1,8 +1,15 @@
 namespace DesafioPOO.Models
 {
-    // TODO: Herdar da classe "Smartphone"
-    public class Iphone
+    public class Iphone : Smartphone
     {
-        // TODO: Sobrescrever o método "InstalarAplicativo"
+        public Iphone(string numero, string modeloSmartphone, string imeiSmartphone, int memoriaSmartphone) : base(numero, modeloSmartphone, imeiSmartphone, memoriaSmartphone)
+        {
+
+        }
+
+        public override void InstalarAplicativo(string nomeApp)
+        {
+            Console.WriteLine($"Instalando o app {nomeApp} no Iphone, aguarde uns instantes!");
+        }
     }
 }
